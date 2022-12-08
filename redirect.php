@@ -8,6 +8,16 @@
  $_SESSION["form.php"]["fName"] = $_POST['gender'];
  $_SESSION["form.php"]["fName"] = $_POST['relationship'];
 
+  $newFormData = array(
+                      "date"=>date("m/d/Y"),  
+                      "fName"=>$_SESSION['form']['fName'], 
+                      "lName"=>$_SESSION['form']['lName'],
+                      "email"=>$_SESSION['form']['email'], 
+                      "age"=>$_SESSION['form']['age'], 
+                      "gender"=>$_SESSION['form']['gender']
+                       "relationship"=>$_SESSION['form']['relationship']
+                        );
+
 
 
 
