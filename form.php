@@ -1,4 +1,4 @@
-<form action="submit.php" method="post">
+<form action="redirect.php" method="post">
   <label for="fname">First Name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last Name:</label><br>
