@@ -1,12 +1,12 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/functions.php';
 
 
- $_SESSION["form.php"]["fName"] = $_POST['fName'];
- $_SESSION["form.php"]["lName"] = $_POST['lName'];
- $_SESSION["form.php"]["email"] = $_POST['email'];
- $_SESSION["form.php"]["age"] = $_POST['age'];
- $_SESSION["form.php"]["gender"] = $_POST['gender'];
- $_SESSION["form.php"]["relationship"] = $_POST['relationship'];
+ $_SESSION["form"]["fName"] = $_POST['fName'];
+ $_SESSION["form"]["lName"] = $_POST['lName'];
+ $_SESSION["form"]["email"] = $_POST['email'];
+ $_SESSION["form"]["age"] = $_POST['age'];
+ $_SESSION["form"]["gender"] = $_POST['gender'];
+ $_SESSION["form"]["relationship"] = $_POST['relationship'];
 
 $newFormData = array(
                       "date"=>date("m/d/Y"),  
@@ -30,7 +30,7 @@ $newFormData = array(
 
   file_put_contents($_SERVER['DOCUMENT_ROOT'].'/data.json', $jsonData);
 
-    header('Location: /index.php');
+    header('Location: /form.php');
 
 
 
