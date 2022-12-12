@@ -13,7 +13,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-       <?php echo $nav ?>
+       <?php echo $nav;?>
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
