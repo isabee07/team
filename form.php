@@ -1,8 +1,8 @@
-<form action="redirect.php" method="post">
-  <label for="fname">First Name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last Name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
+<form action="/redirect.php" method="post">
+  <label for="fName">First Name:</label><br>
+  <input type="text" id="fName" name="fName"><br>
+  <label for="lName">Last Name:</label><br>
+  <input type="text" id="lName" name="lName"><br>
   <label for="email">Email:</label><br>
   <input type="text" id="email" name="email"><br>
   <label for="age">Age:</label><br>
