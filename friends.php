@@ -22,8 +22,8 @@ $pastFormData = json_decode($jsonFormData, TRUE);
             <div class="text-center mt-5">
                 <h1>A Bootstrap 5 Starter Template</h1>
               <?php 
-
 foreach ($pastFormData as $key => $item) {
+  if ($item['relationship'] === "friend") {
     echo $item['fName']."<br>"; 
     echo $item['lName']."<br>"; 
     echo $item['email']."<br>"; 
@@ -31,6 +31,7 @@ foreach ($pastFormData as $key => $item) {
     echo $item['Message']."<br>"; 
     echo $item['relationship']."<hr>"; 
   }
+}
 ?> 
 
               
