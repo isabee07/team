@@ -1,4 +1,7 @@
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/functions.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/functions.php';
+$jsonFormData = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/data.json');
+$pastFormData = json_decode($jsonFormData, TRUE);
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,8 +21,20 @@
         <div class="container">
             <div class="text-center mt-5">
                 <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.1.3</p>
+              <?php 
+foreach ($pastFormData as $key => $item) {
+  if ($item['relationship'] === "coworker") {
+    echo $item['fName']."<br>"; 
+    echo $item['lName']."<br>"; 
+    echo $item['email']."<br>"; 
+    echo $item['age']."<br>"; 
+    echo $item['Message']."<br>"; 
+    echo $item['relationship']."<hr>"; 
+  }
+}
+?> 
+
+              
             </div>
         </div>
         <!-- Bootstrap core JS-->
