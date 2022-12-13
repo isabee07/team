@@ -11286,3 +11286,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+/* Start Self Style */
+.mainForm {
+  text-align: center;
+}
