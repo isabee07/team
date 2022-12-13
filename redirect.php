@@ -30,7 +30,7 @@ $newFormData = array(
 
   file_put_contents($_SERVER['DOCUMENT_ROOT'].'/data.json', $jsonData);
 
-    header('Location: /form.php');
+    header('Location: /index.php');
 
 
 

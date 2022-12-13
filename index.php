@@ -21,6 +21,33 @@
                 <p class="lead">A complete project boilerplate built with Bootstrap</p>
                 <p>Bootstrap v5.1.3</p>
             </div>
+          <hr>
+          <br>
+            <div class="mainForm">
+              <form action="/redirect.php" method="post">
+                <label for="fName">First Name:</label><br>
+                <input type="text" id="fName" name="fName"><br>
+                <label for="lName">Last Name:</label><br>
+                <input type="text" id="lName" name="lName"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age"><br>
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select><br><br>
+                 <label for="relationship">Relation with Person:</label><br>
+                <select id="relationship" name="relationship">
+                  <option value="friend">Friend</option>
+                  <option value="coworker">Coworker</option>
+                  <option value="familyMember">Family Member</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          <hr>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
