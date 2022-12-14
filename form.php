@@ -11,6 +11,7 @@
   <select id="gender" name="gender">
     <option value="male">Male</option>
     <option value="female">Female</option>
+    <option value="nonBinary">Non Binary</option>
   </select><br><br>
    <label for="relationship">Relation with Person:</label><br>
   <select id="relationship" name="relationship">
