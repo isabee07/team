@@ -28,7 +28,7 @@ foreach ($pastFormData as $key => $item) {
     echo $item['lName']."<br>"; 
     echo $item['email']."<br>"; 
     echo $item['age']."<br>"; 
-    echo $item['Message']."<br>"; 
+    echo $item['gender']."<br>"; 
     echo $item['relationship']."<hr>"; 
   
   }

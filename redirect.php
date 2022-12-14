@@ -14,7 +14,7 @@ $newFormData = array(
                       "lName"=>$_SESSION['form']['lName'],
                       "email"=>$_SESSION['form']['email'], 
                       "age"=>$_SESSION['form']['age'], 
-                      "Message"=>$_SESSION['form']['gender'],
+                      "gender"=>$_SESSION['form']['gender'],
                       "relationship"=>$_SESSION['form']['relationship']
                         );
          
