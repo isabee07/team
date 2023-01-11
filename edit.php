@@ -1,4 +1,20 @@
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/functions.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/functions.php';
+$jsonFormData = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/data.json');
+$pastFormData = json_decode($jsonFormData, TRUE);
+
+foreach ($pastFormData as $key => $value) {
+  if ($value['uid'] == $_GET['uid']) {
+    $editUid = $value['uid']; 
+    $editfName = $value['fName']; 
+    $editlName = $value['lName']; 
+    $editEmail = $value['email']; 
+    $editAge = $value['age']; 
+    $editGender = $value['gender']; 
+    $editRelationship = $value['relationship']; 
+  }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,9 +33,30 @@
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.1.3</p>
+                 <form action="/redirect.php" method="post">
+  <label for="fName">First name:</label><br>
+  <input type="text" id="fName" name="fName" value="<?php echo $editfName; ?>"><br>
+  <label for="lName">Last name:</label><br>
+  <input type="text" id="lName" name="lName" value="<?php echo $editlName; ?>"><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value="<?php echo $editEmail; ?>"><br>
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age" value="<?php echo $editAge; ?>"><br>
+  <label for="gender">Gender:</label><br>
+  <select id="gender" name="gender" value="<?php echo $editGender; ?>">
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="nonBinary">Non Binary</option>
+              </select><br><br>
+  <label for="relationship">Relation with Person:</label><br>
+              <select id="relationship" name="relationship" value="<?php echo $editRelationship; ?>">
+                <option value="friend">Friend</option>
+                <option value="coworker">Coworker</option>
+                <option value="familyMember">Family Member</option>
+              </select><br><br>
+        <input type="submit" value="Submit">
+</form>
+         <?php echo $_GET['uid']; ?>
             </div>
         </div>
         <!-- Bootstrap core JS-->
