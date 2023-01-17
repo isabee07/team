@@ -1,1 +1,83 @@
-[{"date":"12\/14\/2022","fName":"chainsawMan","lName":"Man","email":"IAMCHAINSAWMAN@GMAIL.COm","age":"6","gender":"male","relationship":"familyMember","uid":1001},{"date":"12\/14\/2022","fName":"Kimmycardish","lName":"mccalistur","email":"HomeNotAlnone@cox.net","age":"11","gender":"nonBinary","relationship":"friend","uid":1007},{"date":"12\/14\/2022","fName":"john","lName":"joe","email":"Jaydenlang24gmail.com","age":"5","gender":"male","relationship":"coworker","uid":1003},{"date":"12\/20\/2022","fName":"jombo","lName":"jamin","email":"joclingo@gmail.com","age":"44","gender":"male","relationship":"friend","uid":1004},{"date":"12\/20\/2022","fName":"ligiment","lName":"finger","email":"kidney@gmail.comf","age":"2","gender":"nonBinary","relationship":"coworker","uid":1008},{"date":"12\/20\/2022","fName":"opnin","lName":"hommin","email":"homosapian@man.co","age":"2002","gender":"female","relationship":"familyMember","uid":1009}]
+[
+    {
+        "date": "12\/14\/2022",
+        "fName": "chainsawMan",
+        "lName": "Man",
+        "email": "IAMCHAINSAWMAN@GMAIL.COm",
+        "age": "6",
+        "gender": "male",
+        "relationship": "familyMember",
+        "uid": 1001
+    },
+    {
+        "date": "12\/14\/2022",
+        "fName": "Kimmycardish",
+        "lName": "mccalistar",
+        "email": "HomeNotAlnone@cox.net",
+        "age": "11",
+        "gender": "male",
+        "relationship": "friend",
+        "uid": 1007
+    },
+    {
+        "date": "12\/14\/2022",
+        "fName": "whore",
+        "lName": "joe",
+        "email": "james@gmail.com",
+        "age": "6",
+        "gender": "male",
+        "relationship": "friend",
+        "uid": 1003,
+        "flName": "james"
+    },
+    {
+        "date": "12\/20\/2022",
+        "fName": "jombo",
+        "lName": "jamin",
+        "email": "joclingo@gmail.com",
+        "age": "44",
+        "gender": "male",
+        "relationship": "friend",
+        "uid": 1004
+    },
+    {
+        "date": "12\/20\/2022",
+        "fName": "ligiment",
+        "lName": "finger",
+        "email": "kidney@gmail.comf",
+        "age": "2",
+        "gender": "nonBinary",
+        "relationship": "coworker",
+        "uid": 1008
+    },
+    {
+        "date": "12\/20\/2022",
+        "fName": "opnin",
+        "lName": "hommin",
+        "email": "homosapian@man.co",
+        "age": "2002",
+        "gender": "female",
+        "relationship": "familyMember",
+        "uid": 1009
+    },
+    {
+        "date": "01\/17\/2023",
+        "fName": "bitch",
+        "lName": "bingo banga",
+        "email": "badonkadonk@outlook.net",
+        "age": "6",
+        "gender": "nonBinary",
+        "relationship": "coworker",
+        "uid": 1
+    },
+    {
+        "date": "01\/17\/2023",
+        "fName": "badabing",
+        "lName": "badaboom",
+        "email": "robbinhugh@cox.net",
+        "age": "69",
+        "gender": "female",
+        "relationship": "familyMember",
+        "uid": 1
+    }
+]

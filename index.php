@@ -48,19 +48,28 @@ $pastFormData = json_decode($jsonFormData, TRUE);
                 <option value="coworker">Coworker</option>
                 <option value="familyMember">Family Member</option>
               </select><br><br>
-              <input type="submit" value="Submit">
+              <input type="submit" value="Create" name="btn_create">
             </form>
           </div>
           <hr>
           <div class="displayData">
             <?php 
+
   foreach ($pastFormData as $key => $item) {
-      echo $item['fName']."<br>"; 
-      echo $item['lName']."<br>"; 
-      echo $item['email']."<br>"; 
-      echo $item['age']."<br>"; 
-      echo $item['gender']."<br>"; 
-      echo $item['relationship']."<hr>"; 
+     foreach ($pastFormData as $key => $value) {
+  echo "<div class='row justify-content-center mt-2'>";
+  echo "<div class='card' style='width: 80%;'>"; 
+  echo "First Name: ".$value['fName']."<br>"; 
+  echo "Last Name: ".$value['lName']."<br>";
+  echo "Email: ".$value['email']."<br>";
+  echo "Age: ".$value['age']."<br>";
+  echo "Gender: ".$value['gender']."<br>";
+  echo "Relationship: ".$value['relationship']."<br>";
+  echo '<a href="/edit.php?uid='.$value["uid"].'">Edit Info</a>';
+  echo "</div>";
+  echo "</div>";  
+   
+}
   }
           ?> 
           </div>
