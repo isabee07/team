@@ -33,7 +33,7 @@ foreach ($pastFormData as $key => $value) {
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
-                 <form action="/redirect.php" method="post">
+                 <form action="/redirectUrMom.php" method="post">
   <label for="fName">First name:</label><br>
   <input type="text" id="fName" name="fName" value="<?php echo $editfName; ?>"><br>
   <label for="lName">Last name:</label><br>
@@ -54,7 +54,8 @@ foreach ($pastFormData as $key => $value) {
                 <option value="coworker">Coworker</option>
                 <option value="familyMember">Family Member</option>
               </select><br><br>
-        <input type="submit" value="Submit">
+<input type="hidden" id="uid" name="uid" value="<?php echo $_GET['uid']; ?>"><br>
+        <input type="submit" value="Save Changes" name="btn_edit">
 </form>
          <?php echo $_GET['uid']; ?>
             </div>

@@ -10,20 +10,18 @@
  $_SESSION["form"]["age"] = $_POST['age'];
  $_SESSION["form"]["gender"] = $_POST['gender'];
  $_SESSION["form"]["relationship"] = $_POST['relationship'];        
-    
-  $newFormData = array(
-                      "date"=>date("m/d/Y"),  
-                      "fName"=>$_SESSION['form']['fName'], 
-                      "lName"=>$_SESSION['form']['lName'],
-                      "email"=>$_SESSION['form']['email'], 
-                      "age"=>$_SESSION['form']['age'], 
-                      "gender"=>$_SESSION['form']['gender'],
-                      "relationship"=>$_SESSION['form']['relationship'],
-                      "uid"=>$largest_uid + 1
-                        ); 
 
-  // add new form to existing array
-  array_push($pastFormData, $newFormData);
+foreach ($pastFormData as $key => $item) {
+  if ($item['uid'] == $_POST['uid']) { 
+    $pastFormData[$key]['fName'] = $_POST['fName'];
+     $pastFormData[$key]['lName'] = $_POST['lName'];
+     $pastFormData[$key]['email'] = $_POST['email'];
+     $pastFormData[$key]['age'] = $_POST['age'];
+     $pastFormData[$key]['gender'] = $_POST['gender'];
+     $pastFormData[$key]['relationship'] = $_POST['relationship'];
+  }
+}
+
   // turn php array back into json data
   $jsonData = json_encode($pastFormData, JSON_PRETTY_PRINT);
 
